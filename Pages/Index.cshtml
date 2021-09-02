@@ -1,0 +1,37 @@
+﻿@page
+@model IndexModel
+@{ ViewData["Title"] = "Home"; }
+
+<div class="text-center">
+    <h1 class="display-4">Welcome, I'm @Model.FullName</h1>
+</div>
+<br />
+<div>
+    <h4>Summary</h4>
+    <p>
+        I'm an enthusiastic software developer with @Model.experience months experience.
+        I am a fast learner and have really enjoyed learning the various aspectd of software development.
+        Practise make perfect, so with every new skill I learn I try and build something small to reinforce what I have learnt.
+        Strong written and verbal communications
+    </p>
+</div>
+<br />
+<br />
+<div>
+    <h4>Skills</h4>
+    <ul>
+        @foreach (string skill in @Model.skills)
+        {
+<li>@skill</li>
+}
+    </ul>
+</div>
+<br />
+<br />
+<div>
+    <h4>Contact</h4>
+    <p>
+        For more information regarding my experience, please refer to my
+        <a href="http://www.linkedin.com/@Model.LinkedInUserName">LinkedIn Profile of @Model.LinkedInUserName</a>
+    </p>
+</div>

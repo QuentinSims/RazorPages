@@ -1,0 +1,23 @@
+﻿@page
+@model TestApp.ProjectsModel
+@{ ViewData["Title"] = "Projects"; }
+
+<div>
+    <h4>Projects</h4>
+</div>
+<br />
+<br />
+<div>
+    @Model.Title
+    @Model.Description
+    @Model.Technologies
+</div>
+<br />
+<br />
+<div>
+    <h4>Portfolio</h4>
+    <p>
+        For more information regarding my projects, please refer to my
+        <a href="http://www.linkedin.com/@Model.GithubUsername">GitHub Profile of @Model.GithubUsername</a>
+    </p>
+</div>
